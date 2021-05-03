@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+header {
+    background-color: black;
+    color: white;
+    /* padding: 12px 24px; */
+}
+.lists {
+    list-style-type: none;
+ }
+.lists li {
+     text-decoration: none; 
+     font-size: 20px; 
+   display: inline-block;
+   /* float: left; */
+   padding: 12px 24px;
+   text-align: center;
+
+}
+.lists li:hover, .dropdown:hover, .dropbtn:hover {
+    color: black;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.search i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.search i:hover {
+    background-color: red;
+    padding: 12px 24px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.dropdown {
+    float: right;
+    /* display: inline-block; */
+    /* /* font-size: 20px; */
+    text-decoration: none; 
+    /* padding: 12px 24px; */
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: inherit;
+    /* padding: 12px 24px; */
+    background-color: inherit;
+    margin: 0;
+}
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdowncontent a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdowncontent a:hover {
+    background-color: lightgray;
+}
+.dropdown:hover .dropdowncontent {
+    display: block;
+}
+.dropbtn i{
+    color: white;
+    font-size: 10px;
+}
+
+.concertpicture img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.info {
+    background-color: white;
+    padding: 64px 80px;
+    margin: 0 100px;
+    text-align: center;
+}
+.description h2 {
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.tagline {
+    color: rgb(136, 133, 133);
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.texts {
+   text-align: justify;
+   font-size: 14px;
+   margin-bottom: 40px;
+}
+.names {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+}
+.names img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    border-color: none;
+}
+.names h4 {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.dates {
+    background-color: black;
+    padding: 64px 80px;
+    /* margin: 0 100px; */
+    text-align: center;
+    color: white;
+}
+.dates h1 {
+    font-size: 33px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.booking{
+    color: rgb(136, 133, 133);
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.display {
+    background-color: white;
+    color: rgb(136, 133, 133);
+    /* padding: 10px 20px; */
+    margin-bottom: 25px;
+}
+
+.firstcol {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+
+}
+.firstcol p{
+    margin-right: 25px;
+}
+.secondcol {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+
+}
+.secondcol p {
+    margin-right: 25px;
+}
+.thirdcol {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.availableseats {
+    background-color: red;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+}
+.number {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px 7px;
+    color: white;
+}
+
+.squeez {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.placeandtime {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+}
+.placeandtime img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+}
+.first {
+    background-color: white;
+
+}
+.placeandtime h3 {
+    color: black;
+    font-size: 17px;
+    /* display: flex;
+    justify-content: flex-start; */
+    text-align: left;
+    margin-bottom: 10px;
+}
+.time {
+    color: rgb(136, 133, 133);
+    /* display: flex;
+    justify-content: flex-start; */
+    margin-bottom: 12px;
+    text-align: left;
+}
+.details {
+    color: black;
+    font-size: 12px;
+    /* display: flex;
+    justify-content: flex-start; */
+    text-align: left;
+    margin-bottom: 10px;
+}
+.buy {
+    background-color: black;
+    color: white;
+    border-style: none;
+    padding: 10px 15px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 10px;
+}
+.buy:hover {
+    background-color: rgb(136, 133, 133);
+    color: black;
+}
+.padding {
+    padding: 0 15px;
+}
+.second {
+    background-color: white;
+}
+.third {
+    background-color: white;
+}
+.contact {
+    background-color: white;
+    padding: 64px 80px;
+    margin: 0 100px;
+    text-align: center;
+}
+.contact h1 {
+    font-size: 33px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.fan {
+    font-style: italic;
+    color: rgb(136, 133, 133);
+    margin-bottom: 30px;
+}
+.contactflexpart {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: left;
+}
+.left i {
+    margin-right: 5px;
+}
+.chicago, .phone, .mail {
+    margin-bottom: 10px;
+}
+.namemail input {
+    padding: 10px 25px 10px 7px;
+    
+}
+.msg input {
+    padding: 10px 210px 10px 7px;
+}
+.namemail {
+    margin-bottom: 10px;
+}
+#send {
+
+    text-align: right;
+    padding-right: 50px;
+    /* background-color: black; */
+    /* color: white; */
+    /* display: inline-block; */
+}
+.sendbtn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.map {
+    width: 100%;
+}
+.footer {
+    background-color: white;
+    padding: 35px;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.firsticon, .secondicon, .thirdicon, .fourthicon, .fifthicon, .sixthicon {
+    display: inline;
+    font-size: 30px;
+}
+.firsticon:hover, .secondicon:hover, .thirdicon:hover, .fourthicon:hover, .fifthicon:hover, .sixthicon:hover {
+    color: rgb(136, 133, 133);
+}
